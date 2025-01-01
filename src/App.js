@@ -60,7 +60,7 @@ function App() {
   }, []);
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/tawasol-application">
         <AlertProvider template={AlertTemplate} {...options}>
           <>
             <Alert />
