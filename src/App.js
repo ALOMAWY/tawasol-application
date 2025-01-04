@@ -68,55 +68,42 @@ function App() {
               <Navbar />
               <Routes>
                 <Route exact path="/" element={<Landing />}></Route>
-                <Route exact path="/register" element={<Register />}></Route>
-                <Route exact path="/login" element={<Login />}></Route>
+                <Route path="/register" element={<Register />}></Route>
+                <Route path="/login" element={<Login />}></Route>
                 <Route
-                  exact
                   path="/home"
                   element={<Private components={Home} />}
                 ></Route>
                 <Route
-                  exact
                   path="/create-profile"
                   element={<Private components={CreateProfile} />}
                 />
                 <Route
-                  exact
                   path="/edit-profile"
                   element={<Private components={EditProfile} />}
                 />
                 <Route
-                  exact
                   path="/add-education"
                   element={<Private components={AddEducation} />}
                 />
                 <Route
-                  exact
                   path="/add-experience"
                   element={<Private components={AddExperience} />}
                 />
                 <Route
-                  exact
                   path="/peoples"
                   element={<Private components={Peoples} />}
                 />
+                <Route path="/posts" element={<Private components={Posts} />} />
                 <Route
-                  exact
-                  path="/posts"
-                  element={<Private components={Posts} />}
-                />
-                <Route
-                  exact
                   path="/settings"
                   element={<Private components={Settings} />}
                 />
                 <Route
-                  exact
                   path="/profile/:id"
                   element={<Private components={Profile} />}
                 />
                 <Route
-                  exact
                   path="/posts/:id"
                   element={<Private components={Comments} />}
                 />
