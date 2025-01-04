@@ -81,8 +81,8 @@ const Sidebar = ({ users: { user }, getProfileDetails }) => {
   const [sideBarHeight, setSideBarHeight] = useState(0);
 
   const onError = () => {
+    setImage(defaultImage);
     if (!errored) {
-      setImage(defaultImage);
       setErrored(true);
     }
   };

@@ -34,7 +34,7 @@ const Private = ({
   useEffect(() => {
     setTimeout(() => {
       handleResize();
-    }, 100);
+    }, 500);
 
     const handleResize = () => {
       if (sideBarRef.current) {
