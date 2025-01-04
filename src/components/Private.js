@@ -2,7 +2,6 @@ import React, { Fragment, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { Navigate } from "react-router-dom";
 import Sidebar from "./Sidebar";
-
 import { connect } from "react-redux";
 import Spinner from "./Spinner";
 
@@ -18,8 +17,8 @@ const Page = styled.section`
 `;
 
 const ContentWrapper = styled.div`
-  margin-left: ${(props) => props.$sidebarWidth || 0}px;
-  width: calc(100% - ${(props) => props.$sidebarWidth || 0}px);
+  margin-left: ${(props) => props.$sidebarWidth || 200}px;
+  width: calc(100% - ${(props) => props.$sidebarWidth || 200}px);
   transition: margin-left 0.3s ease;
   height: 100%;
 `;

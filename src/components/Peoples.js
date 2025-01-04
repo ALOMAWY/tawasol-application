@@ -76,7 +76,7 @@ const Member = ({ profile }) => {
 
   useEffect(() => {
     setImage(getProfileImage(profile.user._id));
-  }, [profile.user._id, image]);
+  }, [getProfileImage, profile.user._id]);
 
   const onError = () => {
     if (!errored) {
