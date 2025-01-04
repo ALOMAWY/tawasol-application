@@ -17,8 +17,8 @@ const Page = styled.section`
 `;
 
 const ContentWrapper = styled.div`
-  margin-left: ${(props) => props.$sidebarWidth || 200}px;
-  width: calc(100% - ${(props) => props.$sidebarWidth || 200}px);
+  margin-left: ${(props) => props.$sidebarWidth || 0}px;
+  width: calc(100% - ${(props) => props.$sidebarWidth || 0}px);
   transition: margin-left 0.3s ease;
   height: 100%;
 `;
