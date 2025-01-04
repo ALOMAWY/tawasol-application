@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://alomawy.github.io/tawasol-application/tawasol-application",
+  "homepage": "https://alomawy.github.io/tawasol-application/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
